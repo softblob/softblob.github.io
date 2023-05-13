@@ -41,7 +41,7 @@ a:hover {
   }
 
   .did-list li {
-    border: 2px double ;
+    border: 1px dotted ;
     list-style: none;
     padding: 0.5em;
     margin-bottom: 1.5em;
@@ -54,6 +54,12 @@ h1{
   margin-bottom: 0.5em;
 }
 
+h2{
+  padding:0;
+  margin:0;
+  font-size: 1.3em;
+  margin-bottom: 0.5em;
+}
 
 .article-head{
   margin-bottom: 2em;
@@ -62,6 +68,10 @@ h1{
 .article-content{
   margin-bottom: 2em;
 }
+.article-intro{
+  margin-bottom: 2em;
+}
+
 
 figure{
   margin:0px;
