@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono">
 	<link rel="stylesheet" type="text/css" href="/css/style.css">
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" 
+    rel = "stylesheet">
+    <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 
     <title>wang yifan</title>
 </head>
@@ -32,8 +36,25 @@
 
     <div class="content-container" style="text-align: center;">
         <div class="content-container" style="display: inline-block; text-align: left; width: 700px; margin-bottom: 20px;">
-            <div class="puzzle">
-                this will be an image puzzle with draggable elements Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe itaque, eligendi porro commodi rerum quos suscipit optio nemo repellat maxime est delectus a nihil dolore excepturi vel deleniti doloribus. Accusamus.
+            
+            <div class="hello-intro" style="margin-bottom: 2em; ">
+                <p style="margin:0;">hello, welcome to this weird website!</p>
+                <p>you can try to open this link in a browswer and drag the following puzzle pieces around </p>
+
+            </div>
+            <div class="puzzle" >
+                
+                <img class="drag" id="drag1" src="./puzzle/puzzle1.png" width="30%">
+                <img class="drag" id="drag2" src="./puzzle/puzzle2.png" width="30%">
+                <img class="drag" style="position:relative;top: 100px; " id="drag3" src="./puzzle/puzzle3.png" width="20%">
+                <img class="drag" style="position:relative;top: 10px; left:-10px" id="drag4" src="./puzzle/puzzle4.png" width="35%">
+                <img class="drag" style="position:relative;top: 10px; left:-85px" id="drag5" src="./puzzle/puzzle5.png" width="60%">
+
+
+                <img class="drag" id="drag6" style="position:relative;top:-100px; left:-50px" src="./puzzle/grass1.svg" width="30%">
+                <img class="drag" id="drag8" style="position:relative;top:-400px; left:100px;" src="./puzzle/grass3.svg" width="35%">
+                <img class="drag" id="drag7" style="position:relative;top:-200px; left:-50px; " src="./puzzle/grass2.svg" width="30%">
+
             </div>
         </div>
     </div>
@@ -41,5 +62,34 @@
 
 
 </body>
+<script>
+    $(function() {
+       $( "#drag1" ).draggable();
+    });
+
+    $(function() {
+       $( "#drag2" ).draggable();
+    });
+    $(function() {
+       $( "#drag3" ).draggable();
+    });
+    $(function() {
+       $( "#drag4" ).draggable();
+    });
+    $(function() {
+       $( "#drag5" ).draggable();
+    });
+    $(function() {
+       $( "#drag6" ).draggable();
+    });
+    $(function() {
+       $( "#drag7" ).draggable();
+    });
+    $(function() {
+       $( "#drag8" ).draggable();
+    });
+ </script>
+
+
 
 </html>

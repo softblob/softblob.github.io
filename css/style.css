@@ -15,11 +15,11 @@ body{
 
 a {
   color: #000;
-  background-color: pink;
+  background-color: #b4b6fd;
 }
 
 a:hover {
-  color:rgb(0,255,0);
+  color:#2afd73;
   cursor: help;
 }
 
@@ -98,3 +98,6 @@ figcaption p {
 }
 
 
+.drag{
+  cursor:move;
+}

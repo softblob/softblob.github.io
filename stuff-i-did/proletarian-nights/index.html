@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
 	<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<style>
+.mySlides {display:none;}
+</style>
+
     <title>proletarian nights</title>
 </head>
 
@@ -49,52 +54,33 @@
             
                 <div class="article-content">
                         <div class="article-intro">
-                        <p>"proletarian nights" are an ongoing collection of drawings, illustrations, tattoos, designs, prints and more, all made during after-work hours .</p>
-                        <p> some ranciere quotes.  </p>
-                        <p> see more <a href="https://www.instagram.com/ooonionskin/" target="_blank">here</a>.</p>
+                            <p>"proletarian nights" are an ongoing collection of drawings, illustrations, tattoos, designs, prints and more, all made during after-work hours .</p>
+                            <p> some ranciere quotes.  </p>
+                            <p> see more <a href="https://www.instagram.com/ooonionskin/" target="_blank">here</a>.</p>
                         </div>
 
-                    <figure >
-                        <img src="media/survive-wage-labor-monday.png" width="100%" alt="make a slide gallery!">
-                        <figcaption>
-                            <p>gallery</p> 
-                        </figcaption>
-                    </figure>
-                
-                    <figure >
-                        <img src="media/survive-wage-labor-wednesday.png" width="100%" alt="how to survive wage labor 1">
-                        <figcaption>
-                            <p>
-                                this is a very life-like experience
-                            </p> 
-                        </figcaption>
-                    </figure>
-                    <figure >
-                        <img src="media/survive-wage-labor-thursday.png" width="100%" alt="how to survive wage labor 1">
-                        <figcaption>
-                            <p>
-                               coins and job
-                            </p> 
-                        </figcaption>
-                    </figure>
-                    <figure >
-                        <img src="media/survive-wage-labor-saturday.png" width="100%" alt="how to survive wage labor 1">
-                        <figcaption>
-                            <p>
-                                food and blood
-                            </p> 
-                        </figcaption>
-                    </figure>
-                    <figure >
-                        <img src="media/lets-quit-together.png" width="100%" alt="how to survive wage labor 1">
-                        <figcaption>
-                            <p>
-                                where is the exit?
-                            </p> 
-                        </figcaption>
-                    </figure>
+                        <div style="position: relative; width:700px;">
+                            <img class="mySlides" src="./media/pn1.png" style="width:100%">
+                            <img class="mySlides" src="./media/pn2.png" style="width:100%">
+                            <img class="mySlides" src="./media/pn3.svg" style="width:100%">
+                            <img class="mySlides" src="./media/pn4.png" style="width:100%">
+                            <img class="mySlides" src="./media/pn5.png" style="width:100%">
+                            <img class="mySlides" src="./media/pn6.png" style="width:100%">
+                            <img class="mySlides" src="./media/pn7.svg" style="width:100%">
+                            <img class="mySlides" src="./media/pn8.jpg" style="width:100%">
+                            <img class="mySlides" src="./media/pn9.png" style="width:100%">
+                            <img class="mySlides" src="./media/pn10.png" style="width:100%">
+                            <img class="mySlides" src="./media/pn11.png" style="width:100%">
+                            <img class="mySlides" src="./media/pn12.png" style="width:100%">
+                            <img class="mySlides" src="./media/pn13.png" style="width:100%">
 
-            
+                            
+                          
+                            <button  onclick="plusDivs(-1)">&#10094;</button>
+                            <button style="position:absolute; right:0px;" onclick="plusDivs(1)">&#10095;</button>
+                        </div>
+                          
+                         
                 </div>
             </article>
 
@@ -102,6 +88,25 @@
         </div>
     </div>
 
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        </script>
 
 
 </body>
