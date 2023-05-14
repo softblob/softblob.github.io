@@ -13,6 +13,8 @@ body{
   margin:0;
 }
 
+
+
 a {
   color: #000;
   background-color: #b4b6fd;
@@ -25,7 +27,23 @@ a:hover {
 
 .nav-subcontainer{
   margin-top: 2em;
+  max-width: 100vw;
+  padding-left: 15px; 
+  padding-right: 15px;
 }
+
+
+div .content-subcontainer{
+  max-width: 100vw;
+  padding-left: 15px; 
+  padding-right: 15px;
+  display: inline-block; 
+  text-align: left; 
+  width: 700px; 
+  margin-bottom: 20px; 
+}
+
+
 
 .nav li {
     display: inline-block;
@@ -34,16 +52,18 @@ a:hover {
   }
 
 
+
   .did-list {
     list-style: none;
     margin: 0;
     padding: 0;
   }
 
-.did-list a{
-  background-color:none;
+  .did-list a {
+    background-color: transparent;
+  }
 
-}
+
 
   .did-list li {
     border: 1px dotted ;
@@ -51,6 +71,9 @@ a:hover {
     padding: 0.5em;
     margin-bottom: 1.5em;
   }
+
+
+
 
 h1{
   padding:0;
@@ -71,6 +94,7 @@ h2{
 }
 
 .article-content{
+  margin-top: 0;
   margin-bottom: 2em;
 }
 .article-intro{
