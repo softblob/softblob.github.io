@@ -40,6 +40,11 @@ a:hover {
     padding: 0;
   }
 
+.did-list a{
+  background-color:none;
+
+}
+
   .did-list li {
     border: 1px dotted ;
     list-style: none;
